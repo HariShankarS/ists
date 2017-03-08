@@ -1,0 +1,103 @@
+section {
+  min-height: 600px;
+  padding-top: 80px;
+}
+h3  {
+  color: black;
+}
+body {
+  background-color: white !important;
+}
+.heading {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  line-height: 33px;
+}
+.sub-heading {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  font-size: 23px;
+  color: #000;
+}
+p, section ul {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #444444;
+  line-height: 30px;
+}
+.heading {
+  margin-bottom: 4%;
+}
+.navbar-default {
+  background-color: white !important;
+}
+.navbar li a {
+  color: #A6A6A6 !important;
+  font-style: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #A6A6A6;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0.8px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  color: black !important;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: inherit;
+  border: 1px solid;
+}
+.navbar .navbar-toggle .icon-bar {
+  border: 1px solid black !important;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  text-align: right;
+}
+.jump {
+  color: black !important;
+  outline: 0 !important;
+}
+.brand {
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+}
+#about-us {
+  min-height: 700px;
+  background-image: url("aboutus.jpg");
+      /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+.main {
+  padding: 0px !important;
+}
+section {
+  padding-left: 20px;
+  padding-right: 50px;
+}
