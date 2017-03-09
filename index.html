@@ -3,6 +3,11 @@
   <head>
     <title>ISTS - IGNITED SPARKS TECHNICAL SOLUTIONS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="telephone=no" name="format-detection">
+    <!--if IE meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')-->
+    <!--if lt IE 9 script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')-->
+    <title>Scrolla - jQuery plugin for reveal animations when scrolling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link type ="text/css" rel="stylesheet" href="ists.css">
@@ -24,25 +29,14 @@
     <script src="side_nav.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar">
-    <!-- <div class="aboutsusus container-fluid">
-      <img src="aboutsusus.jpg" height="300px" width="100%">
-    </div> -->
-<!--     <div class="main container-fluid">
-      <div id="computer" >
-        <div class="navbar navbar-fixed-top navbar-default">
+    <div class="main container-fluid">
+<!--       <div id="computer" >
+        <div class="navbar navbar-default">
           <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
             <div class="navbar-collapse collapse navbar-warning-collapse">
               <ul class="nav navbar-nav">
               </ul>
               <ul class="nav navbar-nav">
-                <li><a class="brand" href="">ISTS</a></li>
                 <li><a class="page-scroll" href="#about-us">About Us</a></li>
                 <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
                 <li><a class="page-scroll" href="#support-downloads">Support</a></li>
@@ -57,14 +51,10 @@
               </ul>
             </div>
           </div>
-        </div>
-        <!-- Header -->
-        <div class="container index">
-          <div class="col-md-12 title">
-          </div>
+          
         </div>
       </div>
-      <div id="wrapper">
+ -->      <div id="wrapper">
           <div class="overlay"></div>
       
           <!-- Sidebar -->
@@ -84,8 +74,10 @@
                 <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
               </ul>
           </nav>
+          <span class="openbtn" style="font-size:30px;color:black;cursor:pointer" onclick="openNav()">
+            <i class="material-icons">view_headline</i>
+          </span>
           <!-- /#sidebar-wrapper -->
-          <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">view_headline</i></span>
         </div>
         <!-- /#wrapper -->
 
@@ -139,7 +131,7 @@
       </section>
       <!--login-register -->
       <section id="login-register">
-        <h3 class="heading">Login and Account creation</h3>
+        <h3 class="heading">Login and Registration</h3>
         <h3>
     <!--     <p>Contains a standard fill-up form of Name, E-mail, Organization, Designation, Phone number, Password etc. Should opt the user for a One Time Registration and this much data is enough to maintain a client database. </p> -->
     <!--     Note to the Web Development Team: Include some punch-lines or tag-lines in the background, if not, use some quotes by famous people – look them up online. Something like this: 
@@ -164,7 +156,59 @@
       </section>
       <!--team-description -->
       <section id="team-description">
-        <h3 class="heading">Team Description</h3>
+        <h3 class="heading">Team Description</h3><br>
+        <div class="items group">
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="0.2s">
+              <img width="200px" height="200px" src="1.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="0.4s">
+              <img width="200px" height="200px" src="2.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="0.6s">
+              <img width="200px" height="200px" src="3.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="0.8s">
+              <img width="200px" height="200px" src="4.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="1s">
+              <img width="200px" height="200px" src="5.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="1.2s">
+              <img width="200px" height="200px" src="6.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="1.4s">
+              <img width="200px" height="200px" src="7.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="1.6s">
+              <img width="200px" height="200px" src="8.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="1.8s">
+              <img width="200px" height="200px" src="9.jpg">
+            </div>             
+          </div>
+          <div class="item col-xs-3">
+            <div class="block animate" data-animate="bounceIn" data-duration="1.2s" data-delay="2.0s">
+              <img width="200px" height="200px" src="10.jpg">
+            </div>             
+          </div>
+        </div>
       </section>
       <!--careers -->
       <section id="careers">
@@ -191,4 +235,15 @@
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="dist/scrolla.jquery.min.js"></script>
+  <script>
+  
+    $('.animate').scrolla({
+      mobile: false,
+      once: false
+    });
+
+  </script>
+
 </html>

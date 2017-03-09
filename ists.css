@@ -101,9 +101,15 @@ p, section ul {
   padding: 0px !important;
 }
 section {
-  padding-left: 20px;
+  padding-left: 50px;
   padding-right: 50px;
 }
 #about-us p {
   color: white !important;
+  font-weight: bold !important;
+}
+.col-xs-3 {
+  width: 200px !important;
+  margin-right: 50px !important;
+  margin-bottom: 30px !important;
 }
