@@ -108,8 +108,23 @@ section {
   color: white !important;
   font-weight: bold !important;
 }
-.col-xs-3 {
+.team_img {
   width: 200px !important;
   margin-right: 50px !important;
   margin-bottom: 30px !important;
+}
+#img-outer-block img {
+  width: 100% !important;
+  -webkit-transition: all .3s ease-out !important ;
+  -moz-transition: all .3s ease-out !important;
+  -o-transition: all .3s ease-out !important;
+  transition: all .3s ease-out !important;
+}
+#img-outer-block img:hover {
+  transform: scale(1.2);
+}
+#img-outer-block {
+  width: 200px !important;
+  height: 200px !important;
+  overflow: hidden;
 }
