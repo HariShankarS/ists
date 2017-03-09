@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link type ="text/css" rel="stylesheet" href="ists.css">
+    <link type ="text/css" rel="stylesheet" href="side_nav.css">
     <link type ="text/css" rel="stylesheet" href="bootstrap.min.css">
     <link type ="text/css" rel="stylesheet" href="bootstrap-material-design.css">
     <link type ="text/css" rel="stylesheet" href="ripples.css">
@@ -20,12 +21,13 @@
     <script src="ripples.js"></script>
     <script src="jquery.easing.min.js"></script>
     <script src="scrolling-nav.js"></script>
+    <script src="side_nav.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <!-- <div class="aboutsusus container-fluid">
       <img src="aboutsusus.jpg" height="300px" width="100%">
     </div> -->
-    <div class="main container-fluid">
+<!--     <div class="main container-fluid">
       <div id="computer" >
         <div class="navbar navbar-fixed-top navbar-default">
           <div class="container-fluid">
@@ -62,6 +64,31 @@
           </div>
         </div>
       </div>
+      <div id="wrapper">
+          <div class="overlay"></div>
+      
+          <!-- Sidebar -->
+          <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+              <ul class="nav sidebar-nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
+                <li><a class="page-scroll" href="#about-us">About Us</a></li>
+                <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
+                <li><a class="page-scroll" href="#support-downloads">Support</a></li>
+                <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
+                <li><a class="page-scroll" href="#community-service">Community </a></li>
+                <li><a class="page-scroll" href="#partners">Partners</a></li>
+                <li><a class="page-scroll" href="#team-description">Team</a></li>
+                <li><a class="page-scroll" href="#careers">Careers</a></li>
+                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
+                <li><a class="page-scroll" href="#feedback">Feedback</a></li>
+                <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
+              </ul>
+          </nav>
+          <!-- /#sidebar-wrapper -->
+          <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">view_headline</i></span>
+        </div>
+        <!-- /#wrapper -->
+
       <!--about-us -->
       <section id="about-us">
         <h3 class="heading">About Us</h3>

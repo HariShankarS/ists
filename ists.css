@@ -1,6 +1,6 @@
 section {
   min-height: 600px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 h3  {
   color: black;
@@ -73,9 +73,8 @@ p, section ul {
   font-weight: bold !important;
   letter-spacing: 2px !important;
 }
-#about-us {
+#about-us{
   min-height: 700px;
-  background-image: url("aboutus.jpg");
       /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
   
@@ -94,10 +93,17 @@ p, section ul {
      while the background image is loading */
   background-color: #464646;
 }
+#about-us {
+  background-image: url("aboutus.jpg");
+}
+
 .main {
   padding: 0px !important;
 }
 section {
   padding-left: 20px;
   padding-right: 50px;
+}
+#about-us p {
+  color: white !important;
 }
