@@ -104,27 +104,58 @@ section {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 #about-us p {
   color: white !important;
   font-weight: bold !important;
 }
+
 .team_img {
   width: 200px !important;
   margin-right: 50px !important;
   margin-bottom: 30px !important;
 }
+
 #img-outer-block img {
   width: 100% !important;
   -webkit-transition: all .3s ease-out !important ;
   -moz-transition: all .3s ease-out !important;
   -o-transition: all .3s ease-out !important;
   transition: all .3s ease-out !important;
+  background-color: #1a1a1a;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
-#img-outer-block img:hover {
-  transform: scale(1.2);
-}
+
 #img-outer-block {
   width: 200px !important;
   height: 200px !important;
   overflow: hidden;
+}
+
+.overly {
+  position: absolute;
+  width: 200px !important;
+  height: 200px !important;
+  z-index: 5;
+}
+.overly_text {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 70px;
+  padding-left: 50px;
+}
+#img-outer-block div.overly:hover {
+  background-color: black;
+  opacity: 0.4;
+  display: block;
+}
+.overly:hover ~ .overly_text {
+  display: block;
 }
