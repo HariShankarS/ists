@@ -28,58 +28,34 @@
   </head>
   <body data-spy="scroll" data-target=".navbar">
     <div class="main container-fluid">
-<!--       <div id="computer" >
-        <div class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-collapse collapse navbar-warning-collapse">
-              <ul class="nav navbar-nav">
-              </ul>
-              <ul class="nav navbar-nav">
-                <li><a class="page-scroll" href="#about-us">About Us</a></li>
-                <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
-                <li><a class="page-scroll" href="#support-downloads">Support</a></li>
-                <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
-                <li><a class="page-scroll" href="#community-service">Community </a></li>
-                <li><a class="page-scroll" href="#partners">Partners</a></li>
-                <li><a class="page-scroll" href="#team-description">Team</a></li>
-                <li><a class="page-scroll" href="#careers">Careers</a></li>
-                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
-                <li><a class="page-scroll" href="#feedback">Feedback</a></li>
-                <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
+      <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
+              <li><a class="page-scroll" href="#about-us">About Us</a></li>
+              <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
+              <li><a class="page-scroll" href="#support-downloads">Support</a></li>
+              <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
+              <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
+              <li><a class="page-scroll" href="#community-service">Community </a></li>
+              <li><a class="page-scroll" href="#partners">Partners</a></li>
+              <li><a class="page-scroll" href="#team-description">Team</a></li>
+              <li><a class="page-scroll" href="#careers">Careers</a></li>
+              <li><a class="page-scroll" href="#feedback">Feedback</a></li>
+              <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <span class="openbtn" style="font-size:30px;color:black;cursor:pointer" onclick="openNav()">
+          <i class="material-icons">view_headline</i>
+        </span>
+        <!-- /#sidebar-wrapper -->
       </div>
- -->      <div id="wrapper">
-          <div class="overlay"></div>
-      
-          <!-- Sidebar -->
-          <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-              <ul class="nav sidebar-nav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
-                <li><a class="page-scroll" href="#about-us">About Us</a></li>
-                <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
-                <li><a class="page-scroll" href="#support-downloads">Support</a></li>
-                <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
-                <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
-                <li><a class="page-scroll" href="#community-service">Community </a></li>
-                <li><a class="page-scroll" href="#partners">Partners</a></li>
-                <li><a class="page-scroll" href="#team-description">Team</a></li>
-                <li><a class="page-scroll" href="#careers">Careers</a></li>
-                <li><a class="page-scroll" href="#feedback">Feedback</a></li>
-                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
-              </ul>
-          </nav>
-          <span class="openbtn" style="font-size:30px;color:black;cursor:pointer" onclick="openNav()">
-            <i class="material-icons">view_headline</i>
-          </span>
-          <!-- /#sidebar-wrapper -->
-        </div>
         <!-- /#wrapper -->
 
-      <!--about-us -->
+        <!--about-us -->
       <section id="about-us">
         <h3 class="heading">About Us</h3>
         <h3 class="sub-heading">Who we are - Our Mission and Values:</h3>
@@ -142,7 +118,6 @@
       <section id="upcoming-events">
         <h3 class="heading">Upcoming Events</h3>
         <!-- Upcoming events section must contain earmarked calendar events. Events may include the next college seminar, recruitment dates, any upcoming client meetings, CSR meetings, Volunteer-ship meetings, workshops. Calendar must be in sync with the national holidays - shows the diversity of the team.  -->
-        </div>
       </section>
       <!--community-service -->
       <section id="community-service">
@@ -224,16 +199,20 @@
       <!--contact-us -->
       <section id="contact-us">
         <h3 class="heading">Contact Us</h3>
-        <h3 class="sub-heading">At ISTS, we highly value your comments and queries. Please get in touch with us at: </h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672
-        " width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <ul>
-          <li>Address: Beside HDFC Bank, CBM Compound, Vishakapatnam - 530003</li>
-          <li>Phone number: 123456789</li>
-          <li>Email: </li>
-        </ul>     
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672
+          " width="500" height="260" frameborder="0" scrolling="no" style="border:0" allowfullscreen></iframe>
+        </div>
+        <p>At ISTS, we highly value your comments and queries. Please get in touch with us at:</p>
+        <p>Address:</p>
+        <p> IGNITED SPARKS TECHNICAL SOLUTIONS,</p>
+        <p>Beside HSBC Bank, CBM Compound, </p>
+        <p>Vishakapatnam,Andhra Pradesh - 530003</p>
+        <p>Phone number: 
+          <span style="color:black;">9494259331,9848537755</span>
+        </p>
+        Mail to us at : <a href="mailto:s.harishankar333@gmail.com?" target="_top"><span style="color:black;">info@ists.com</span></a>
       </section>
-
       <div class="footer">
         <a class="page-scroll jump" href="#about-us" style="display: none;">
           <i class="material-icons arrow_black">arrow_upward</i>

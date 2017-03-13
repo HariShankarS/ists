@@ -1,9 +1,6 @@
 section {
   padding-top: 50px;
 }
-#contact-us {
-  height: 300px !important;
-}
 h3  {
   color: black;
 }
@@ -159,4 +156,11 @@ section {
 }
 #img-outer-block:hover .overly_text {
   display: block;
+}
+#contact-us .col-md-6 {
+  font-family: 'Open Sans',sans-serif !important;
+}
+#contact-us, #contact-us p {
+  background-color: #f06a59;
+  color: white !important;
 }
