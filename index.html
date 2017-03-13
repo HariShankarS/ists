@@ -7,22 +7,23 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link type ="text/css" rel="stylesheet" href="ists.css">
-    <link type ="text/css" rel="stylesheet" href="side_nav.css">
+    <link type ="text/css" rel="stylesheet" href="sidenav/side_nav.css">
     <link type ="text/css" rel="stylesheet" href="bootstrap.min.css">
     <link type ="text/css" rel="stylesheet" href="bootstrap-material-design.css">
     <link type ="text/css" rel="stylesheet" href="ripples.css">
-    <link href="scrolling-nav.css" rel="stylesheet">
+    <link href="scrolling/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sniglet" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cherry+Cream+Soda"/>  
     <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="http://maps.google.com/maps/api/js"></script>
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="material.min.js"></script>
     <script src="ripples.js"></script>
     <script src="jquery.easing.min.js"></script>
-    <script src="scrolling-nav.js"></script>
-    <script src="side_nav.js"></script>
+    <script src="scrolling/scrolling-nav.js"></script>
+    <script src="sidenav/side_nav.js"></script>
     <script src="ists.js"></script>
   </head>
   <body data-spy="scroll" data-target=".navbar">
@@ -61,14 +62,14 @@
                 <li><a class="page-scroll" href="#about-us">About Us</a></li>
                 <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
                 <li><a class="page-scroll" href="#support-downloads">Support</a></li>
+                <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
                 <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
                 <li><a class="page-scroll" href="#community-service">Community </a></li>
                 <li><a class="page-scroll" href="#partners">Partners</a></li>
                 <li><a class="page-scroll" href="#team-description">Team</a></li>
                 <li><a class="page-scroll" href="#careers">Careers</a></li>
-                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
                 <li><a class="page-scroll" href="#feedback">Feedback</a></li>
-                <li><a class="page-scroll" href="#login-register">Login/Register</a></li>
+                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
               </ul>
           </nav>
           <span class="openbtn" style="font-size:30px;color:black;cursor:pointer" onclick="openNav()">
@@ -131,7 +132,7 @@
         <h3 class="heading">Login and Registration</h3>
         <h3>
     <!--     <p>Contains a standard fill-up form of Name, E-mail, Organization, Designation, Phone number, Password etc. Should opt the user for a One Time Registration and this much data is enough to maintain a client database. </p> -->
-    <!--     Note to the Web Development Team: Include some punch-lines or tag-lines in the background, if not, use some quotes by famous people – look them up online. Something like this: 
+    <!--     Note to the Web Development Team: Include some punch-lines or tag-lines in the background, if not, use some quotes by famous people - look them up online. Something like this: 
     “Engineers like to solve problems. If there are no problems handily available, they will create their own problems.”  - Scott Adams.
 
     Quotes must be related to engineering, technology and innovation. Having this on the background boosts the aesthetics to a whole new level.  -->
@@ -140,7 +141,7 @@
       <!--upcoming-events -->
       <section id="upcoming-events">
         <h3 class="heading">Upcoming Events</h3>
-        <!-- Upcoming events section must contain earmarked calendar events. Events may include the next college seminar, recruitment dates, any upcoming client meetings, CSR meetings, Volunteer-ship meetings, workshops. Calendar must be in sync with the national holidays – shows the diversity of the team.  -->
+        <!-- Upcoming events section must contain earmarked calendar events. Events may include the next college seminar, recruitment dates, any upcoming client meetings, CSR meetings, Volunteer-ship meetings, workshops. Calendar must be in sync with the national holidays - shows the diversity of the team.  -->
         </div>
       </section>
       <!--community-service -->
@@ -160,10 +161,10 @@
               <div class="overly">
               </div>
               <div class="overly_text">
-                <h5>Saran Kumar</h5>
-                <h5>Java Developer</h5>
+                <h5>P.C.Venaglah</h5>
+                <h5>Research & development</h5>
               </div>
-              <img src="1.jpg">
+              <img src="6.jpg">
             </div>             
           </div>
           <div class="item team_img col-xs-3">
@@ -171,21 +172,21 @@
               <div class="overly">
               </div>
               <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
+                <h5>V.Vamsinadh</h5>
+                <h5>Research & development</h5>
               </div>
-              <img src="2.jpg">
+              <img src="7.jpg">
             </div>             
           </div>
-          <div class="item team_img col-xs-3">
+          <div class="item team_img col-xs-1">
             <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="0.6s">
               <div class="overly">
               </div>
               <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
+                <h5>M.Tejaswi</h5>
+                <h5>Research & development</h5>
               </div>
-              <img src="3.jpg">
+              <img src="8.jpg">
             </div>             
           </div>
           <div class="item team_img col-xs-3">
@@ -193,74 +194,19 @@
               <div class="overly">
               </div>
               <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
-              </div>
-              <img src="4.jpg">
-            </div>             
-          </div>
-          <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="1s">
-              <div class="overly">
-              </div>
-              <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
-              </div>
-              <img src="5.jpg">
-            </div>             
-          </div>
-          <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="1.2s">
-              <div class="overly">
-              </div>
-              <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
-              </div>
-              <img src="6.jpg">
-            </div>             
-          </div>
-          <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="1.4s">
-              <div class="overly">
-              </div>
-              <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
-              </div>
-              <img src="7.jpg">
-            </div>             
-          </div>
-          <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="1.6s">
-              <div class="overly">
-              </div>
-              <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
-              </div>
-              <img src="8.jpg">
-            </div>             
-          </div>
-          <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block" data-animate="bounceIn" data-duration="1.2s" data-delay="1.8s">
-              <div class="overly">
-              </div>
-              <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
+                <h5>Manoj Sharma</h5>
+                <h5>Training & Development</h5>
               </div>
               <img src="9.jpg">
             </div>             
           </div>
           <div class="item team_img col-xs-3">
-            <div class="block animate" id="img-outer-block"  data-animate="bounceIn" data-duration="1.2s" data-delay="2.0s">
+            <div class="block animate" id="img-outer-block"  data-animate="bounceIn" data-duration="1.2s" data-delay="1.0s">
               <div class="overly">
               </div>
               <div class="overly_text">
-                <h5>Jaya Sree</h5>
-                <h5>Java Developer</h5>
+                <h5>Arpit Arora</h5>
+                <h5>Training & Development</h5>
               </div>
               <img src="10.jpg">
             </div>             
@@ -271,20 +217,23 @@
       <section id="careers">
         <h3 class="heading">Careers</h3>
       </section>
-      <!--contact-us -->
-      <section id="contact-us">
-        <h3 class="heading">Contact Us</h3>
-        <h3 class="sub-heading">At ISTS, we highly value your comments and queries. Please get in touch with us at: </h3>
-        <ul>
-          <li>Address: Beside HDFC Bank, CBM Compound, Vishakapatnam – 530003</li>
-          <li>Phone number: 123456789</li>
-          <li>Email: </li>
-        </ul>     
-      </section>
       <!--feedback -->
       <section id="feedback">
         <h3 class="heading">Feedback</h3>
       </section>
+      <!--contact-us -->
+      <section id="contact-us">
+        <h3 class="heading">Contact Us</h3>
+        <h3 class="sub-heading">At ISTS, we highly value your comments and queries. Please get in touch with us at: </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672
+        " width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <ul>
+          <li>Address: Beside HDFC Bank, CBM Compound, Vishakapatnam - 530003</li>
+          <li>Phone number: 123456789</li>
+          <li>Email: </li>
+        </ul>     
+      </section>
+
       <div class="footer">
         <a class="page-scroll jump" href="#about-us" style="display: none;">
           <i class="material-icons arrow_black">arrow_upward</i>
@@ -292,7 +241,7 @@
       </div>
     </div>
   </body>
-  <script src="dist/scrolla.jquery.min.js"></script>
+  <script src="scrolla/scrolla.jquery.min.js"></script>
   <script>
   
     $('.animate').scrolla({
