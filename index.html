@@ -9,8 +9,8 @@
     <link type ="text/css" rel="stylesheet" href="ists.css">
     <link type ="text/css" rel="stylesheet" href="sidenav/side_nav.css">
     <link type ="text/css" rel="stylesheet" href="bootstrap.min.css">
-    <link type ="text/css" rel="stylesheet" href="bootstrap-material-design.css">
-    <link type ="text/css" rel="stylesheet" href="ripples.css">
+    <link type ="text/css" rel="stylesheet" href="material/bootstrap-material-design.css">
+    <link type ="text/css" rel="stylesheet" href="material/ripples.css">
     <link href="scrolling/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sniglet" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cherry+Cream+Soda"/>  
@@ -19,8 +19,8 @@
     <script src="http://maps.google.com/maps/api/js"></script>
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <script src="material.min.js"></script>
-    <script src="ripples.js"></script>
+    <script src="material/material.min.js"></script>
+    <script src="material/ripples.js"></script>
     <script src="jquery.easing.min.js"></script>
     <script src="scrolling/scrolling-nav.js"></script>
     <script src="sidenav/side_nav.js"></script>
@@ -195,23 +195,174 @@
       <!--feedback -->
       <section id="feedback">
         <h3 class="heading">Feedback</h3>
+        <div class="container-fluid">
+          <div class="col-md-6 col-md-offset-3">
+            <form class="form-group" action="mailto:s.harishankar333@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <p>Name:</p><br>
+                <input type="text" class="form-box" name="name" size="50">
+              </div>
+              <div class="form-group">
+                <p>E-mail:</p><br>
+                <input type="text" class="form-box" name="mail" size="50">
+              </div>
+              <div class="form-group">
+                <p>Phone Number:</p><br>
+                <input type="text" class="form-box" name="mobile" size="50">
+              </div>
+              <div class="form-group">
+                <p>Organization:</p><br>
+                <input type="text" class="form-box" name="organization" size="50">
+              </div>
+              <div class="form-group">
+                <p>Designation:</p><br>
+                <input type="text" class="form-box" name="designation" size="50">
+              </div>
+              <div class="form-group">
+                <p>Are you or have you, in the past, been a client to ISTS?</p>
+                <div class="container-fluid">
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Are you or have you, in the past, been a client to ISTS?" value="Yes"> Yes
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Are you or have you, in the past, been a client to ISTS?" value="No"> No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="container-fluid">
+                  <p>Is our website convenient in terms of accessibility?</p>
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Is our website convenient in terms of accessibility?" value="Yes">Yes
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Is our website convenient in terms of accessibility?" value="No">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>If No, please mention how we could improve</p>
+                <input type="text" class="form-box" name="If No, please mention how we could improve" size="50"><br><br>
+              </div>
+              <div class="form-group">
+                <div class="container-fluid">
+                  <p>Are you satisfied with our services?</p>
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Are you satisfied with our services? " value="Yes">Yes
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio"  name="Are you satisfied with our services? " value="No">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="container-fluid">
+                  <p>Would you like to associate with us in future?</p>
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Would you like to associate with us in future?" value="Yes">Yes
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio"  name="Would you like to associate with us in future?" value="No">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <p>How would you rate our services?</p>
+                <div class="container-fluid">
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="How would you rate our services?" value="Very Satisfactory">Very Satisfactory
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="How would you rate our services?" value=" Satisfactory"> Satisfactory
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="How would you rate our services?" value="Dis-satisfactory">Dis-satisfactory
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio"  name="How would you rate our services?" value="Neither Satisfactory nor dis-satisfactory">Neither Satisfactory nor dis-satisfactory
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="How would you rate our services?" value="Very Dis-satisfactory">Very Dis-satisfactory
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="container-fluid">
+                  <p>Do you want our representative to get in touch with you?</p>
+                  <div class="col-md-12">
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Do you want our representative to get in touch with you?" value="Yes">Yes
+                      </label>
+                    </div>
+                    <div class="radio radio-primary">
+                      <label>
+                        <input type="radio" name="Do you want our representative to get in touch with you?" value="No">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-raised btn-info">
+                <input type="reset" value="Reset" class="btn btn-raised btn-success">
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
       <!--contact-us -->
       <section id="contact-us">
         <h3 class="heading">Contact Us</h3>
-        <div class="col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672
-          " width="500" height="260" frameborder="0" scrolling="no" style="border:0" allowfullscreen></iframe>
+        <div class="col-md-4 col-md-offset-2">
+          <iframe height="280" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672
+          " frameborder="0" scrolling="no" style="border:0" allowfullscreen></iframe>
         </div>
-        <p>At ISTS, we highly value your comments and queries. Please get in touch with us at:</p>
-        <p>Address:</p>
+        <p>At ISTS, we highly value your comments and queries.</p>
+        <p>Please get in touch with us at:</p>
         <p> IGNITED SPARKS TECHNICAL SOLUTIONS,</p>
         <p>Beside HSBC Bank, CBM Compound, </p>
         <p>Vishakapatnam, Andhra Pradesh - 530003</p>
         <p>Phone number: 
           <span style="color:black;">9494259331,9848537755</span>
         </p>
-        Mail to us at : <a href="mailto:s.harishankar333@gmail.com?" target="_top"><span style="color:black;">info@ists.com</span></a>
+        Mail to us at : <a href="mailto:s.harishankar333@gmail.com?" target="_top"><span style="color:black;">s.harishankar333@gmail.com</span></a>
       </section>
       <div class="footer">
         <a class="page-scroll jump" href="#about-us" style="display: none;">
