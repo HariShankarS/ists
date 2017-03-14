@@ -164,7 +164,37 @@ section {
     text-transform: capitalize;
 }
 
+/*read more
+*/
+.our-team .read-more{
+    width: 100px;
+    padding: 0 15px 15px 0;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.35px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    font-family: Sniglet;
+    transform: translate3d(20px, 20px, 0px);
+    transition: all 0.35s ease 0s;
+}
+.our-team:hover .read-more{
+    opacity: 0.85 !important;
+    transform: translate3d(0px, 0px, 0px);
+}
+.our-team a {
+  text-decoration: none !important;
+  outline: 0;
+}
+
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
 }
+
+
+
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
