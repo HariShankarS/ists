@@ -77,29 +77,6 @@ p, section ul {
   font-weight: bold !important;
   letter-spacing: 2px !important;
 }
-#about-us{
-  min-height: 700px;
-      /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646;
-}
-#about-us {
-  background-image: url("aboutus.jpg");
-}
 
 .main {
   padding: 0px !important;
@@ -109,14 +86,9 @@ section {
   padding-right: 50px;
 }
 
-#about-us p {
-  color: white !important;
-  font-weight: bold !important;
-}
-
 .team_img {
   width: 200px !important;
-  margin-right: 50px !important;
+  margin-right: 20px !important;
   margin-bottom: 30px !important;
 }
 
@@ -167,11 +139,17 @@ section {
   padding-bottom: 30px;
 }
 #contact-us, #contact-us p {
-  background-color: #f06a59;
+  background-color: #2b334f;
   color: white !important;
   font-weight: 500 !important;
 }
-.form-box {
+#contact-us .col-md-5, #contact-us .col-md-4 {
+  margin-top: 50px;
+}
+#contact-us a {
+  text-decoration: blink;
+}
+/*.form-box {
   display: block;
   width: 100%;
   height: 34px;
@@ -189,9 +167,18 @@ section {
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-#feedback {
+.form-box:focus{
+  border-color:white;
+  outline:0;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+*/
+/*#feedback {
   background-color: #2e5367;
 }
-#feedback p {
+#feedback p, #feedback label:hover {
   color: white;
-}
+}*/
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
