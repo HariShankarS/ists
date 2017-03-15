@@ -195,6 +195,95 @@ section {
     .our-team{ margin-bottom: 30px; }
 }
 
-
-
+#home {
+  min-height: 600px;
+}
+#home h1 {
+  font-family: 'PT Sans', sans-serif !important;
+  text-align: center;
+}
+.logo {
+  margin-top: -20px ;
+}
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.aboutus-box {
+  background: #DC005A;
+  color: #fff;
+  padding: 65px 85px;
+  margin: 0 -15px;
+  overflow: hidden;
+}
+.aboutus-box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 29px;
+  margin-bottom: 30px;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+.aboutus-box .line {
+  border: 1px solid;
+  display: block;
+  width: 20%;
+  margin: 20px 0;
+}
+.aboutus-box.purple {
+  background: #7A4B94;
+}
+.aboutus-box.black {
+  background: #2A3636;
+}
+#about-us .row {
+  margin-right: -70px;
+  margin-left: -70px;
+}
+.aboutus-box .content h3 {
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.aboutus-box .content a {
+  background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+  border: 2px solid hsl(0, 0%, 97%);
+  border-radius: 0;
+  color: #fff !important;
+  padding: 9px 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+}
+.aboutus-box .content a:hover{
+  background-color: hsl(0, 0%, 97%) !important;
+  color: hsl(0, 0%, 20%) !important;
+}
+.aboutus-box .content a:hover i{
+  opacity:0;
+}
+.aboutus-box .content .line{
+  border: 1px solid;
+  display: block;
+  width: 20%;
+  margin: 20px 0;
+}
+.aboutus-box .content a i{
+  margin-left:6px;
+  color: white;
+}
+.aboutus-box.pink .modal-content {
+  background: #DC005A;
+}
+.aboutus-box.purple .modal-content {
+  background: #7A4B94;
+}
+.aboutus-box.black .modal-content {
+  background: #2A3636;
+}
+.about-us .modal-content p {
+  letter-spacing: 1.5px;
+}
+#contact-us .heading {
+  color: white;
+}

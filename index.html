@@ -3,6 +3,7 @@
   <head>
     <title>ISTS - IGNITED SPARKS TECHNICAL SOLUTIONS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -12,6 +13,7 @@
     <link type ="text/css" rel="stylesheet" href="material/bootstrap-material-design.css">
     <link type ="text/css" rel="stylesheet" href="material/ripples.css">
     <link href="scrolling/scrolling-nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sniglet" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cherry+Cream+Soda"/>  
     <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext"/>
@@ -38,8 +40,8 @@
               <li><a class="page-scroll" href="#about-us">About Us</a></li>
               <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
               <li><a class="page-scroll" href="#support-downloads">Support</a></li>
-              <li><a class="page-scroll" href="#register">Register</a></li>
-              <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
+<!--               <li><a class="page-scroll" href="#register">Register</a></li>
+ -->          <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
               <li><a class="page-scroll" href="#community-service">Community </a></li>
               <li><a class="page-scroll" href="#partners">Partners</a></li>
               <li><a class="page-scroll" href="#team-description">Team</a></li>
@@ -53,19 +55,113 @@
         </span>
         <!-- /#sidebar-wrapper -->
       </div>
-        <!-- /#wrapper -->
 
-        <!--about-us -->
+      <!-- Home -->
+      <section id="home">
+        <div class="container-fluid">
+          <div class="col-md-2" align="center">
+            <img class="logo" src="Logo.png" width="120px">
+          </div>
+          <div class="col-md-8">
+            <h1> IGNITED SPARKS TECHNICAL SOLUTIONS </h1> 
+          </div>
+        </div>
+      </section>
+
+      <!--about-us -->
       <section id="about-us">
         <h3 class="heading">About Us</h3>
-        <h3 class="sub-heading">Who we are - Our Mission and Values:</h3>
-        <p>With an aim to revolutionize the art of Industrial Engineering, we are a team of skilled engineers constantly working on serving the Industry through Research and Development. Our mission is to bridge the road between Ideas and Design through Engineering and Consulting. We consistently work with our Clients for next generation ideas and impart expert training to make those ideas come to life. With a team of expert trained support engineers, we provide a vast array of services ranging from Front End Consulting to Planning and Strategy development. All of our workforce is committed to Developing, Integrating and Managing Technology solutions.</p>
-        <h3 class="sub-heading">What we do - Our Niche:</h3>
-        <p>As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation. Our backbone is our expertise in Professional Design Services and Solutions. We offer services in the domains of Hardware and Software Development, Custom Product Designs and Mechanical Engineering Solutions to improve Quality Engineering and Product Economic Efficiency. At ISTS we constantly thrive to provide our clients with the best industry solutions and implementation to ensure them sustaining their competitive edge and also to add value to their aid of professional services, adding both diversity and prosperity to their business.</p>
-        <h3 class="sub-heading">Success Stories - </h3>
-        <h3 class="sub-heading">Meet Our Team - </h3>
-        <p>Redirect to Team Desciption</p>
-      <!--     Note to Web-Development Team: While plugging all the content in, please choose appropriate background image. I can provide some reference images if required, but it's extremely important to have such an image in the first place. Kindly confirm all of that before the finalising of the webpage. It is also recommended to choose a light background color such as White. White works all the time, due to its contrast.  -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="aboutus-box pink">
+                <div class="content">
+                  <h3>Who we are- Our Mission & Values</h3>
+                  <span class="line"></span>
+                  <p>With an aim to revolutionize the art of Industrial Engineering, we are a team of skilled engineers constantly working on serving the Industry through Research and Development.</p>
+                  <a data-toggle="modal" data-target="#what-we-are" class="btn btn-default" href="">Read more <i class="material-icons">thumb_up</i></a>
+                  <div class="modal" id="what-we-are">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" style="color:white;" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                          <h3 class="modal-title">Who we are - Our Mission & Values</h3>
+                        </div>
+                        <div class="modal-body" >
+                          <div class="col-md-10 col-md-offset-1">
+                            <p> With an aim to revolutionize the art of Industrial Engineering, we are a team of skilled engineers constantly working on serving the Industry through Research and Development. Our mission is to bridge the road between Ideas and Design through Engineering and Consulting. We consistently work with our Clients for next generation ideas and impart expert training to make those ideas come to life. With a team of expert trained support engineers, we provide a vast array of services ranging from Front End Consulting to Planning and Strategy development. All of our workforce is committed to Developing, Integrating and Managing Technology solutions.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-raised btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="aboutus-box purple">
+                <div class="content">
+                  <h3>What we do - Our Niche:</h3>
+                  <span class="line"></span>
+                  <p>As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation.</p>
+                  <a data-toggle="modal" data-target="#what-we-do" class="btn btn-default" href="">Read more <i class="material-icons">thumb_up</i></a>
+                  <div class="modal" id="what-we-do">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" style="color:white;" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                          <h3 class="modal-title">What we do - Our Niche:</h3>
+                        </div>
+                        <div class="modal-body" >
+                          <div class="col-md-10 col-md-offset-1">
+                            <p> As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation. Our backbone is our expertise in Professional Design Services and Solutions. We offer services in the domains of Hardware and Software Development, Custom Product Designs and Mechanical Engineering Solutions to improve Quality Engineering and Product Economic Efficiency. At ISTS we constantly thrive to provide our clients with the best industry solutions and implementation to ensure them sustaining their competitive edge and also to add value to their aid of professional services, adding both diversity and prosperity to their business.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-raised btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="aboutus-box black">
+                <div class="content">
+                  <h3>Success Stories</h3>
+                  <span class="line"></span>
+                  <p>As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation.</p>
+                  <a data-toggle="modal" data-target="#success-stories" class="btn btn-default" href="">Read more <i class="material-icons">thumb_up</i></a>
+                  <div class="modal" id="success-stories">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" style="color:white;" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                          <h3 class="modal-title">Success - Stories:</h3>
+                        </div>
+                        <div class="modal-body" >
+                          <div class="col-md-10 col-md-offset-1">
+                            <p> As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation. Our backbone is our expertise in Professional Design Services and Solutions. We offer services in the domains of Hardware and Software Development, Custom Product Designs and Mechanical Engineering Solutions to improve Quality Engineering and Product Economic Efficiency. At ISTS we constantly thrive to provide our clients with the best industry solutions and implementation to ensure them sustaining their competitive edge and also to add value to their aid of professional services, adding both diversity and prosperity to their business.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-raised btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--products-services -->
       <section id="products-services">
@@ -104,31 +200,23 @@
       <!--Note   • All the details of the Research Projects and the Humanoid Robotic Workshop from the ISTS website can be displayed here. A little description about the Workshop would also boost the display. Please provide details about the place of the workshop, participation and experience.  -->
       </section>
       <!--register -->
-      <section id="register">
+<!--       <section id="register">
         <h3 class="heading">Registration</h3>
-        <h3>
-    <!--     <p>Contains a standard fill-up form of Name, E-mail, Organization, Designation, Phone number, Password etc. Should opt the user for a One Time Registration and this much data is enough to maintain a client database. </p> -->
-    <!--     Note to the Web Development Team: Include some punch-lines or tag-lines in the background, if not, use some quotes by famous people - look them up online. Something like this: 
-    “Engineers like to solve problems. If there are no problems handily available, they will create their own problems.”  - Scott Adams.
-
-    Quotes must be related to engineering, technology and innovation. Having this on the background boosts the aesthetics to a whole new level.  -->
-        </h3>
       </section>
       <!--upcoming-events -->
-      <section id="upcoming-events">
+<!--       <section id="upcoming-events">
         <h3 class="heading">Upcoming Events</h3>
-        <!-- Upcoming events section must contain earmarked calendar events. Events may include the next college seminar, recruitment dates, any upcoming client meetings, CSR meetings, Volunteer-ship meetings, workshops. Calendar must be in sync with the national holidays - shows the diversity of the team.  -->
-      </section>
+      </section> -->
       <!--community-service -->
-      <section id="community-service">
+<!--       <section id="community-service">
         <h3 class="heading">Community Participation </h3>
-      </section>
+      </section> --> -->
       <!--partners -->
       <section id="partners">
         <h3 class="heading">Partners</h3>
       </section>
       <!--team-description -->
-      <section id="team-description">
+<!--       <section id="team-description">
         <div class="container-fluid">
           <h3 class="heading">Team Description</h3><br>
           <div class="row">
@@ -216,209 +304,27 @@
             </div>
           </div>
         </div>
-      </section>
-      <!--careers -->
-<!--  <section id="careers">
-        <div class="container-fluid">
-          <h3 class="heading">Careers</h3>
-          <div class="col-md-6 col-md-offset-3">
-            <p> Join Us! </p>
-            <form class="form-group" action="mailto:s.harishankar333@gmail.com" method="post" enctype="text/plain">
-              <div class="form-group">
-                <p>Name:</p><br>
-                <input type="text" class="form-box" name="name" size="50" required>
-              </div>
-              <div class="form-group">
-                <p>E-mail:</p><br>
-                <input type="text" class="form-box" name="mail" size="50" required>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send" class="btn btn-raised btn-info">
-                <input type="reset" value="Reset" class="btn btn-raised btn-success">
-              </div>
-            </form>
-        </div>
       </section> -->
-      <!--feedback -->
-<!--       <section id="feedback">
-        <h3 class="heading">Feedback</h3>
-        <div class="container-fluid">
-          <div class="col-md-6 col-md-offset-3">
-            <p>At ISTS, we highly value your feedback as we constantly throve to improve our services. Please fill up the following form to indicate our strengths and weaknesses. We would retain this information in our database.</p>
-            <form class="form-group" action="mailto:s.harishankar333@gmail.com" method="post" enctype="text/plain">
-              <div class="form-group">
-                <p>Name:</p><br>
-                <input type="text" class="form-box" name="name" size="50" required>
-              </div>
-              <div class="form-group">
-                <p>E-mail:</p><br>
-                <input type="text" class="form-box" name="mail" size="50" required>
-              </div>
-              <div class="form-group">
-                <p>Resume:</p>
-                <input type="file" id="myFile" name="resume">
-              </div>
-              <div class="form-group">
-                <p>Phone Number:</p><br>
-                <input type="text" class="form-box" name="mobile" size="50">
-              </div>
-              <div class="form-group">
-                <p>Organization:</p><br>
-                <input type="text" class="form-box" name="organization" size="50">
-              </div>
-              <div class="form-group">
-                <p>Designation:</p><br>
-                <input type="text" class="form-box" name="designation" size="50">
-              </div>
-              <div class="form-group">
-                <p>Are you or have you, in the past, been a client to ISTS?</p>
-                <div class="container-fluid">
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Are you or have you, in the past, been a client to ISTS?" value="Yes"> Yes
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Are you or have you, in the past, been a client to ISTS?" value="No"> No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="container-fluid">
-                  <p>Is our website convenient in terms of accessibility?</p>
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Is our website convenient in terms of accessibility?" value="Yes">Yes
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Is our website convenient in terms of accessibility?" value="No">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <p>If No, please mention how we could improve</p>
-                <input type="text" class="form-box" name="If No, please mention how we could improve" size="50"><br><br>
-              </div>
-              <div class="form-group">
-                <div class="container-fluid">
-                  <p>Are you satisfied with our services?</p>
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Are you satisfied with our services? " value="Yes">Yes
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio"  name="Are you satisfied with our services? " value="No">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="container-fluid">
-                  <p>Would you like to associate with us in future?</p>
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Would you like to associate with us in future?" value="Yes">Yes
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio"  name="Would you like to associate with us in future?" value="No">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <p>How would you rate our services?</p>
-                <div class="container-fluid">
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="How would you rate our services?" value="Very Satisfactory">Very Satisfactory
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="How would you rate our services?" value=" Satisfactory"> Satisfactory
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="How would you rate our services?" value="Dis-satisfactory">Dis-satisfactory
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio"  name="How would you rate our services?" value="Neither Satisfactory nor dis-satisfactory">Neither Satisfactory nor dis-satisfactory
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="How would you rate our services?" value="Very Dis-satisfactory">Very Dis-satisfactory
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="container-fluid">
-                  <p>Do you want our representative to get in touch with you?</p>
-                  <div class="col-md-12">
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Do you want our representative to get in touch with you?" value="Yes">Yes
-                      </label>
-                    </div>
-                    <div class="radio radio-primary">
-                      <label>
-                        <input type="radio" name="Do you want our representative to get in touch with you?" value="No">No
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send" class="btn btn-raised btn-info">
-                <input type="reset" value="Reset" class="btn btn-raised btn-success">
-              </div>
-            </form>
-            <p>Thank you for your time.</p>
-          </div>
-        </div>
-      </section> -->
+
       <!--contact-us -->
       <section id="contact-us">
         <div class="container-fluid">
         <h3 class="heading">Contact Us</h3>
         <div class="col-md-5">
           <div class='embed-container'>
-            <iframe height='200' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.8747810293069!2d83.31315955938682!3d17.725399285637426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f64751413%3A0x3f1fe89800a3d129!2sHSBC+Bank!5e0!3m2!1sen!2sin!4v1489392584672' frameborder='0' scrolling='no' style='border:0' allowfullscreen></iframe>
+            <iframe height='200' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.4157555249894!2d83.3118703148811!3d17.725038987877134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39433f6f498499%3A0x423e802c0972b352!2sIyantra+Manufacturers+of+AAC+%26CLC+Machinery+%26+Chemicals!5e0!3m2!1sen!2sin!4v1489512021288" scrolling='no' frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-md-4 col-md-offset-2">
         <p>At ISTS, we highly value your comments and queries.</p>
         <p>Please get in touch with us at:</p>
-        <p> IGNITED SPARKS TECHNICAL SOLUTIONS,</p>
-        <p>Beside HSBC Bank, CBM Compound, </p>
+        <p><strong>IGNITED SPARKS TECHNICAL SOLUTIONS</strong> ,</p>
+        <p>Beside HSBC Bank, 10-1-38/2/2, CBM Compound, </p>
         <p>Vishakapatnam, Andhra Pradesh - 530003</p>
         <p>Phone number: 
-          <span style="color:black;">9494259331,9848537755</span>
+          <strong>9494259331,9848537755</strong>
         </p>
-        Mail to us at : <a href="mailto:s.harishankar333@gmail.com?" target="_top"><span style="color:black;">s.harishankar333@gmail.com</span></a>
+        Mail to us at : <strong><a href="mailto:s.harishankar333@gmail.com?" target="_top">s.harishankar333@gmail.com</a></strong>
         </div>
         </div>
       </section>
