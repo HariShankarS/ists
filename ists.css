@@ -1,6 +1,9 @@
 section {
   padding-top: 50px;
 }
+.openbtn {
+  z-index: 12;
+}
 h3  {
   color: black;
 }
@@ -80,10 +83,6 @@ p, section ul {
 
 .main {
   padding: 0px !important;
-}
-section {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 #contact-us {
@@ -210,7 +209,8 @@ section {
 .aboutus-box {
   background: #DC005A;
   color: #fff;
-  padding: 65px 85px;
+  padding: 40px;
+  padding-left: 60px;
   margin: 0 -15px;
   overflow: hidden;
 }
@@ -233,10 +233,6 @@ section {
 }
 .aboutus-box.black {
   background: #2A3636;
-}
-#about-us .row {
-  margin-right: -70px;
-  margin-left: -70px;
 }
 .aboutus-box .content h3 {
   font-family: "Open Sans",Helvetica, Arial, sans-serif;
@@ -274,16 +270,107 @@ section {
 }
 .aboutus-box.pink .modal-content {
   background: #DC005A;
+  border: 5px solid white;
 }
 .aboutus-box.purple .modal-content {
   background: #7A4B94;
+  border: 5px solid white;
 }
 .aboutus-box.black .modal-content {
   background: #2A3636;
+  border: 5px solid white;
 }
-.about-us .modal-content p {
-  letter-spacing: 1.5px;
+.aboutus-box .modal-content p {
+  font-family: Josefin Sans,sans-serif;
+  line-height: 23px;
+  font-size: 15px;
 }
 #contact-us .heading {
   color: white;
+}
+#parallax-testimonial-carousel li {
+  border: 1px solid black;
+}
+.parallax-testimonial {
+  padding: 0 15px 30px; 
+}
+section.parallax-1 {
+  background-image: url("parallax-1.jpg");
+}
+section.parallax { padding: 30px 0; }
+section.parallax {
+  padding: 65px 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Parallax Testimonial
+=========================== */
+.parallax-testimonial{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.parallax-testimonial-review > span {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-top: 15px;
+  padding-left: 20px;
+  display: block;
+}
+.parallax-testimonial-item blockquote{
+    border-left:none;
+}
+.parallax-testimonial-item blockquote p {
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.parallax-testimonial blockquote small {
+  display: block;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.parallax-testimonial-review {
+  position: relative;
+}
+
+.parallax-testimonial-review small {
+  font-size: 13px;
+  line-height:18px;
+  color: #727CB6;
+  display:block;
+}
+.parallax-testimonial .carousel-indicators{
+  bottom: 0;
+  margin-bottom: 0;
+}
+#home {
+  padding-top: 0px;
 }
