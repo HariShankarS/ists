@@ -393,10 +393,10 @@ section.parallax h2 {
     left: 50%;
     margin-left: -23px;
 }
-ul.client_items li {
+ul.client_items li, ul.project_list li {
     list-style:none;
 }
-.client_items a {
+.client_items a, .project_list a {
   text-decoration: none !important;
   cursor: pointer;
 }
@@ -486,4 +486,16 @@ ul.client_items li {
 
 #clients {
   margin-bottom: 40px;
+}
+
+#support-downloads {
+  margin-bottom: 60px;
+}
+
+#support-downloads a {
+  font-size: 19px !important;
+}
+
+.work_pics {
+  margin-top: 50px; 
 }
