@@ -163,33 +163,6 @@ p, section ul {
     text-transform: capitalize;
 }
 
-/*read more
-*/
-.our-team .read-more{
-    width: 100px;
-    padding: 0 15px 15px 0;
-    font-size: 14px;
-    color: #fff;
-    letter-spacing: 0.35px;
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    z-index: 1;
-    font-family: Sniglet;
-    transform: translate3d(20px, 20px, 0px);
-    transition: all 0.35s ease 0s;
-}
-.our-team:hover .read-more{
-    opacity: 0.85 !important;
-    transform: translate3d(0px, 0px, 0px);
-}
-.our-team a {
-  text-decoration: none !important;
-  outline: 0;
-}
-
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
 }
@@ -283,7 +256,7 @@ p, section ul {
 .aboutus-box .modal-content p {
   font-family: Josefin Sans,sans-serif;
   line-height: 23px;
-  font-size: 15px;
+  font-size: 17px;
 }
 #contact-us .heading {
   color: white;
@@ -296,6 +269,10 @@ p, section ul {
 }
 section.parallax-1 {
   background-image: url("parallax-1.jpg");
+}
+section.parallax-2 {
+  background-image: url("parallax-2.jpg");
+  opacity: 0.85 !important;
 }
 section.parallax { padding: 30px 0; }
 section.parallax {
@@ -323,7 +300,7 @@ section.parallax h2 {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-/* Parallax Testimonial
+/* Parallax For Quotes
 =========================== */
 .parallax-testimonial{
   margin: 0 auto;
@@ -373,4 +350,140 @@ section.parallax h2 {
 }
 #home {
   padding-top: 0px;
+}
+
+/*our-clients*/
+.dividerHeading h4 {
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    padding: 0 0 10px;
+    position: relative;
+}
+
+.dividerHeading h4::before {
+    bottom: -3px;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    left: 20px;
+    position: absolute;
+    width: 35px;
+}
+.dividerHeading h4::after {
+    bottom: -1px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+.dividerHeading h4::after,
+.dividerHeading h4::before {
+   background: #727CB6;
+}
+
+.dividerHeading.text-center h4:before{
+    left: 50%;
+}
+
+.dividerHeading.text-center h4:after{
+    left: 50%;
+    margin-left: -23px;
+}
+ul.client_items li {
+    list-style:none;
+}
+.client_items a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.card {
+  height: 400px;
+  padding: 50px;
+}
+
+
+
+/* service Box 
+====================================*/
+.serviceBox {
+    margin-bottom: 20px;
+}
+.serviceBox {
+    background: hsl(0, 0%, 100%);
+}
+.serviceBox .service-icon{
+    float: left;
+}
+.serviceBox .service-content h3{
+    margin: 11px 0 30px 67px;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "Open Sans",Helvetica, Arial, sans-serif;
+}
+.serviceBox .service-content p{
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    font-family: "Open Sans",Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+.serviceBox .service-icon i{
+    box-shadow: 5px 5px 0 hsla(0, 0%, 0%, 0.1);
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    transition:all 0.2s ease-in-out;
+}
+.serviceBox:hover .service-icon i{
+    border-radius: 50%;
+    transform: translate(0px, 3px);
+    transition:all 0.5s ease-in-out;
+}
+.serviceBox .service-icon .robot{
+    background: #ff5722;
+}
+#robot .modal-content {
+    border: 5px solid #ff5722;
+}
+.serviceBox .service-icon .research{
+    background: #0fb2fc;
+}
+#research .modal-content {
+    border: 5px solid #0fb2fc;
+    border: 1px solid white;
+}
+.serviceBox .service-icon .training{
+    background: #00aa9a;
+}
+#training .modal-content {
+    border: 5px solid #00aa9a;
+}
+.serviceBox .service-icon .engineering, .btn-engineering {
+    background: #7A4B94 !important;
+    color: white !important;
+}
+#engineering .modal-content {
+    border: 5px solid #7A4B94;
+}
+.serviceBox .card-body button {
+  margin-top: 40px;
+}
+#products-services .modal-content p,#products-services .modal-content ul {
+  font-family: Josefin Sans,sans-serif !important;
+  line-height: 23px;
+  font-size: 17px !important;
+}
+
+#clients {
+  margin-bottom: 40px;
 }
