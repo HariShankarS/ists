@@ -1,9 +1,7 @@
 section {
   padding-top: 50px;
 }
-.openbtn {
-  z-index: 12;
-}
+
 h3  {
   color: black;
 }
@@ -498,4 +496,13 @@ ul.client_items li, ul.project_list li {
 
 .work_pics {
   margin-top: 50px; 
+}
+#team-description {
+}
+#team-description .row {
+  margin-top: 100px !important; 
+  margin-bottom: 140px !important;
+}
+.openbtn {
+  z-index: 12;
 }
