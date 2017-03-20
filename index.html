@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cherry+Cream+Soda"/>  
     <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="page-scroll/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="page-scroll/css/style.css"> <!-- Resource style -->
+    <script src="page-scroll/js/modernizr.js"></script> 
     <script src="http://maps.google.com/maps/api/js"></script>
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
@@ -28,66 +31,57 @@
     <script src="scrolling/scrolling-nav.js"></script>
     <script src="sidenav/side_nav.js"></script>
     <script src="ists.js"></script>
-  </head>
-  <body data-spy="scroll" data-target=".navbar">
+    <script src="page-scroll/js/velocity.min.js"></script>
+    <script src="page-scroll/js/velocity.ui.min.js"></script>
+    <script src="page-scroll/js/main.js"></script> <!-- Resource jQuery -->
+</head>
+  <body data-hijacking="off" data-animation="scaleDown" data-spy="scroll" data-target=".navbar">
     <div class="main container-fluid">
-      <div id="wrapper">
+<!--       <div id="wrapper">
         <div class="overlay"></div>
 
-        <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">close</i></a>
               <li><a class="page-scroll" href="#about-us">About Us</a></li>
               <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
               <li><a class="page-scroll" href="#support-downloads">Support</a></li>
-<!--               <li><a class="page-scroll" href="#register">Register</a></li>
- -->          <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
+              <li><a class="page-scroll" href="#upcoming-events">Events</a></li>
               <li><a class="page-scroll" href="#community-service">Community </a></li>
               <li><a class="page-scroll" href="#clients">clients</a></li>
               <li><a class="page-scroll" href="#team-description">Team</a></li>
-              <li><a target="_blank" href="https://script.google.com/macros/s/AKfycbxZcDqJAevvFSLCZFYgqTL5FTuIzeu98hvOgls7b-0/dev">Careers</a></li>
-              <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfmgWjWI-ttfNpKZ7UpKPNhS4cPhlJ5r8YAfZTyMUn-QDrFRA/viewform?usp=sf_link">Feedback</a></li>
+              <li><a target="_blank" href="https://script.google.com/macros/s/AKfycbxw1HuSD2Sy3O0Mps_QphWgGKSTlz4HsMImYBeiSb8ybgFJ8Xu_/exec">Careers</a></li>
+              <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0i-4AQvhiKCu0D5oxcaetFSx_sYUWXIkL0BSU2DfGigExXA/viewform">Feedback</a></li>
               <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
-        <span class="openbtn" style="font-size:30px;color:black;cursor:pointer" onclick="openNav()">
+        <span class="openbtn" style="font-size:30px;color:#f01d51;cursor:pointer" onclick="openNav()">
           <i class="material-icons">view_headline</i>
         </span>
-        <!-- /#sidebar-wrapper -->
-      </div>
+      </div> -->
       <!-- Home -->
-      <section id="home">
-        <div class="navbar navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-collapse collapse navbar-warning-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a class="page-scroll" href="#about-us">About Us</a></li>
-                <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
-                <li><a class="page-scroll" href="#support-downloads">Support</a></li>
-                <li><a target="_blank" href="https://script.google.com/macros/s/AKfycbxZcDqJAevvFSLCZFYgqTL5FTuIzeu98hvOgls7b-0/dev">Careers</a></li>
-                <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfmgWjWI-ttfNpKZ7UpKPNhS4cPhlJ5r8YAfZTyMUn-QDrFRA/viewform?usp=sf_link">Feedback</a></li>
-                <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
-              </ul>
-            </div>
+      <div class="navbar navbar-fixed-top navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-collapse collapse navbar-warning-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="page-scroll" href="#about-us">About Us</a></li>
+              <li><a class="page-scroll" href="#products-services">Products & Services</a></li>
+              <li><a class="page-scroll" href="#support-downloads">Support</a></li>
+              <li><a target="_blank" href="https://script.google.com/macros/s/AKfycbxw1HuSD2Sy3O0Mps_QphWgGKSTlz4HsMImYBeiSb8ybgFJ8Xu_/exec">Careers</a></li>
+              <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0i-4AQvhiKCu0D5oxcaetFSx_sYUWXIkL0BSU2DfGigExXA/viewform">Feedback</a></li>
+              <li><a class="page-scroll" href="#contact-us">Contact Us</a></li>
+            </ul>
           </div>
         </div>
+      </div>
 
       
-        <div class="container-fluid">
-          <div class="col-md-2" align="center">
-            <img class="logo" src="Logo.png" width="120px">
-          </div>
-          <div class="col-md-8">
-            <h1> IGNITED SPARKS TECHNICAL SOLUTIONS </h1> 
-          </div>
-        </div>
-      </section>
+
 
       <!--about-us -->
-      <section id="about-us" class="row">
-        <h3 class="heading">About Us</h3>
+      <section class="cd-section" id="about-us" class="row">
         <div class="container-fluid">
+        <h3 class="heading">About Us</h3>
           <div class="row">
             <div class="col-sm-4">
               <div class="aboutus-box pink">
@@ -151,9 +145,11 @@
             <div class="col-sm-4">
               <div class="aboutus-box black">
                 <div class="content">
-                  <h3>Success Stories</h3>
+                  <h3>Empowering Students</h3>
                   <span class="line"></span>
-                  <p>As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation.</p>
+                  <p>
+                    Our courses are designed so to enhance the exposure of the Students in Design Thinking – The most ‘In-Demand’ Talent in the industry. <br><br>
+                  </p>
                   <a data-toggle="modal" data-target="#success-stories" class="btn btn-default" href="">Read more <i class="material-icons">thumb_up</i></a>
                   <div class="modal" id="success-stories">
                     <div class="modal-dialog">
@@ -163,8 +159,8 @@
                         </div>
                         <div class="modal-body" >
                           <div class="col-md-10 col-md-offset-1">
-                            <h3 class="modal-title">Success - Stories:</h3>
-                            <p> As a part of our evolving Research and Development Programme, we are committed to providing the Industry with A-Class Technology Solutions and Implementation. Our backbone is our expertise in Professional Design Services and Solutions. We offer services in the domains of Hardware and Software Development, Custom Product Designs and Mechanical Engineering Solutions to improve Quality Engineering and Product Economic Efficiency. At ISTS we constantly thrive to provide our clients with the best industry solutions and implementation to ensure them sustaining their competitive edge and also to add value to their aid of professional services, adding both diversity and prosperity to their business.
+                            <h3 class="modal-title">Empowering Students:</h3>
+                            <p> Our courses are designed so to enhance the exposure of the Students in Design Thinking – The most ‘In-Demand’ Talent in the industry. <br><br>We also have collaborations with several International Student Design Competitions to give Students the platform the test and compete amongst the best. <br><br> The basic idea is to enhance the overall thought process, to give them the sense for technological miracles, and how they can be a part of a revolution in making, in today’s world, also giving them the platform to augment their Management skills and Cross Functional Team Leadership.
                             </p>
                           </div>
                         </div>
@@ -181,9 +177,8 @@
         </div>
       </section>
 <!-- Parallax with Testimonial -->
-    <section class="parallax parallax-1">
+<!--     <section class="parallax parallax-1">
         <div class="container">
-          <!--<h2 class="center">Testimonials</h2>-->
           <div class="row">
             <div id="parallax-testimonial-carousel" class="parallax-testimonial carousel wow bumpInUp" style="visibility: visible; animation-name: bumpInUp;">
               <div class="carousel-inner slide" data-ride="carousel">
@@ -233,12 +228,12 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> -->
 <!-- end : Parallax with Testimonial -->
       <!--products-services -->
-      <section id="products-services">
-        <h3 class="heading">Products and Services</h3>
+      <section class="cd-section" id="products-services">
         <div class="container-fluid">
+          <h3 class="heading">Products and Services</h3>
           <div class="row row-fluid">
             <div class="col-md-3">
               <div class="item">
@@ -253,7 +248,7 @@
                         <div class="service-content">
                           <h3>Research and Development</h3>
                           <p>
-                            The recent era of Industrialization has revolutionized the art of trade, with a complete give-and-take process of Cross Border Flow of resources, both materialistic and human resources. Such rapid transfer of technology has stressed on improving the viability of domestic technology, which is possible only after extracting the required resources and applying an engineered thought.
+                            The recent era of Industrialization has revolutionized the art of trade, with a complete give-and-take process of Cross Border Flow of resources, both materialistic and human resources. Such rapid transfer of technology has stressed on improving the viability of domestic technology.
                           </p>
                         </div>
                         <button data-toggle="modal" data-target="#research" class="btn btn-info btn-raised">Read More</button>
@@ -304,7 +299,7 @@
                         <div class="service-content">
                           <h3>Product Engineering Services</h3>
                           <p>
-                            A successful product meets all the requirements in the market. It must be capable, competent and must be comparatively efficient. Our Strategy team works round the clock to devise the products to meet all the criterion of being successful, economical and efficient in the real world. For this vey fabrication, custom designs become a major variable in determining the efficacy of a product.
+                            A successful product meets all the requirements in the market. It must be capable, competent and must be comparatively efficient. Our Strategy team works round the clock to devise the products to meet all the criterion of being successful, economical and efficient in the real world.
                           </p>
                         </div>
                         <button data-toggle="modal" data-target="#engineering" class="btn btn-engineering btn-raised">Read More</button>
@@ -353,7 +348,7 @@
                         <div class="service-content">
                           <h3>Project Based Industrial Training</h3>
                           <p>
-                            We widely acknowledge the important role that Students play in the Industry, of being the prospective leaders in the Industry and the backbone of the society. At ISTS, we have platforms to provide budding learners with the best Industry learnings. We firmly believe that a practical exposure goes a long way when compared to theoretical studies.
+                            We widely acknowledge the important role that Students play in the Industry, of being the prospective leaders in the Industry and the backbone of the society. At ISTS, we have platforms to provide budding learners with the best Industry learnings. We firmly believe that a practical exposure goes a long way ...
                           </p>
                         </div>
                         <button data-toggle="modal" data-target="#training" class="btn btn-primary btn-raised">Read More</button>
@@ -404,9 +399,9 @@
                           <i class="material-icons robot">android</i>
                         </div>
                         <div class="service-content">
-                          <h3>Robotics Workshop</h3>                        
+                          <h3>Humanoid Robotics Workshop</h3>                        
                           <p>
-                            We love to be in conversation with the young leaders of tomorrow and also play our part in nurturing them with all the Industry important skills. As a part of our Seminar series we conduct at various schools and colleges, "Robo-Gyan" is our flagship workshop course designed for students to meddle into the sphere of Robotic Technology and Integration.
+                            We love to be in conversation with the young leaders of tomorrow and also play our part in nurturing them with all the Industry important skills. As a part of our Seminar series we conduct at various schools and colleges, "Robo-Gyan" is our flagship workshop course designed for students to meddle into ...
                           </p>
                         </div>
                         <button data-toggle="modal" data-target="#robot" class="btn btn-warning btn-raised">Read More</button>
@@ -443,33 +438,12 @@
       </section>
 
 
-     <!--clients -->
 
-      <section id="clients" class="clients">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <div class="dividerHeading">
-                <h4><span>Our Clients</span></h4>
-              </div>
-              <div>
-                <ul class="client_items clearfix">
-                  <li class="col-sm-3 col-md-3 col-lg-3"><a>BENAKA BIOTECHNOLOGIES</a></li>
-                  <li class="col-sm-3 col-md-3 col-lg-3"><a>HORTICULTURE UNIVERSITY</a></li>
-                  <li class="col-sm-3 col-md-3 col-lg-3"><a>IYANTRA INDUSTRIES</a></li>
-                  <li class="col-sm-3 col-md-3 col-lg-3"><a>BVC EDUCATIONAL GROUP</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       <!-- Parallax with Testimonial -->
-      <section class="parallax parallax-2">
+<!--       <section  class="parallax parallax-2">
         <div class="container">
-          <!--<h2 class="center">Testimonials</h2>-->
           <div class="row">
             <div id="parallax-testimonial-carousel" class="parallax-testimonial carousel wow bumpInUp" style="visibility: visible; animation-name: bumpInUp;">
               <div class="carousel-inner slide" data-ride="carousel">
@@ -515,14 +489,14 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 <!-- end : Parallax with Testimonial -->
 
       <!--support-downloads -->
 
-      <section id="support-downloads">
-        <h3 class="heading">Support and Downloads</h3>
+      <section  class="cd-section" id="support-downloads">
         <div class="container">
+          <h3 class="heading">Support and Downloads</h3>
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="dividerHeading">
@@ -571,8 +545,50 @@
         </div>
       </section>
 
+
+     <!--clients -->
+
+      <section class="cd-section" id="clients" class="clients">
+        <div class="container">
+          <h3 class="heading">Clients</h3>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="dividerHeading">
+                <h4><span>Our Clients</span></h4>
+              </div>
+              <h5>We collaborate with Research and Development Firms and Institutes across the country and work consistently with the aim of providing the best solutions in Green Energy and Sustainable Development. We are partnered with:<br><br> </h5>
+              <div>
+                <ul class="nav nav-tabs client_items clearfix">
+                  <li class="col-sm-3 col-md-3 col-lg-3"><a data-toggle="tab" href="#benaka">BENAKA BIOTECHNOLOGIES</a></li>
+                  <li class="col-sm-3 col-md-3 col-lg-3"><a data-toggle="tab" href="#iyantra">IYANTRA INDUSTRIES</a></li>
+                  <li class="col-sm-3 col-md-3 col-lg-3"><a>HORTICULTURE UNIVERSITY</a></li>
+                  <li class="col-sm-3 col-md-3 col-lg-3"><a>BVC EDUCATIONAL GROUP</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div id="benaka" class="tab-pane fade in active">
+                    <p>
+                      <br><strong>Benaka Biotechnologies Private Limited </strong>(Benaka) was established in 2011 with objective to provide sustainable off-grid energy solution to cater to India's growing energy demand. Although started as a small setup to provide services, Benaka soon moved across life cycle. They offer wide range of extremly reliabile and efficient components as well as state of the art and proven technology for mesophilic anaerobic fermentation of any bio-degradable waste. They possess technology to Dairy & Agricultural waste, Food waste,& Auatic weeds.
+                    </p>
+                  </div>
+                  <div id="iyantra" class="tab-pane fade">
+                    <p>
+                      <br><strong>Iyantra Industries</strong> give products in the foam concrete machinery, foaming agent, foam generators, cellular light weight concrete blocks, technical support supplier, mainly for the North America, south America, eastern Europe, southeast Asia, Africa, mid-east, eastern Asia, western Europe markets. <br><br><br>
+                    </p>
+                  </div>
+                </div>
+              </div><hr><br>
+              <h4 class="collaborate"> Collaborate with Us : </h4>
+              <p>
+                We have collaborations with the Top Design Institutes across the country. To partner with us would provide your institution unmatched, unparalleled Brand empowerment. Not only would your School stand amongst the rest,being unique in providing such Training Programmes to the Students, But also get featured in various e-commerce platforms in distributing automation products and content to the students, also enhancing the entrepreneurial exposure of the students in the same process. We also have various Seminars and Training Schedules in where, IIM/IIT/NIT Graduates would be keynote speakers. This would also enhance campus culture and enlist your 
+                school as one of the first in country, to encourage Product Development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--register -->
-<!--       <section id="register">
+<!--       <section
+ id="register">
         <h3 class="heading">Registration</h3>
       </section>
       <!--upcoming-events -->
@@ -586,7 +602,7 @@
  
 <!--       team-description
  -->  
-      <section id="team-description">
+<!--       <section id="team-description">
         <div class="container">
           <h3 class="heading">Team Description</h3><br>
           <div class="row">
@@ -654,10 +670,10 @@
             </div>
           </div>
         </div>
-      </section>  
+      </section>  --> 
 
       <!--contact-us -->
-      <section id="contact-us">
+      <section  class="cd-section" id="contact-us">
         <div class="container-fluid">
         <h3 class="heading">Contact Us</h3>
         <div class="col-md-5">

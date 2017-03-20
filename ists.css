@@ -32,11 +32,7 @@ p, section ul {
 .heading {
   margin-bottom: 4%;
 }
-.navbar-default {
-  background-color: white !important;
-}
 .navbar li a {
-  color: #A6A6A6 !important;
   font-style: normal;
   line-height: 1.5;
   text-transform: uppercase;
@@ -46,9 +42,6 @@ p, section ul {
   letter-spacing: 0.8px;
   font-size: 12px;
   text-decoration: none;
-}
-.navbar li a:hover {
-  color: black !important;
 }
 .navbar .navbar-toggle .icon-bar {
   background-color: inherit;
@@ -165,9 +158,6 @@ p, section ul {
     .our-team{ margin-bottom: 30px; }
 }
 
-#home {
-  min-height: 600px;
-}
 #home h1 {
   font-family: 'PT Sans', sans-serif !important;
   text-align: center;
@@ -266,10 +256,8 @@ p, section ul {
   padding: 0 15px 30px; 
 }
 section.parallax-1 {
-  background-image: url("parallax-1.jpg");
 }
 section.parallax-2 {
-  background-image: url("parallax-2.jpg");
   opacity: 0.85 !important;
 }
 section.parallax { padding: 30px 0; }
@@ -407,9 +395,7 @@ ul.client_items li, ul.project_list li {
 
 /* service Box 
 ====================================*/
-.serviceBox {
-    margin-bottom: 20px;
-}
+
 .serviceBox {
     background: hsl(0, 0%, 100%);
 }
@@ -417,7 +403,7 @@ ul.client_items li, ul.project_list li {
     float: left;
 }
 .serviceBox .service-content h3{
-    margin: 11px 0 30px 67px;
+    margin: 1px 10px 20px 67px;
     color: #000;
     font-size: 16px;
     line-height: 30px;
@@ -425,7 +411,7 @@ ul.client_items li, ul.project_list li {
     font-family: "Open Sans",Helvetica, Arial, sans-serif;
 }
 .serviceBox .service-content p{
-    font-size: 13px;
+    font-size: 12px;
     line-height: 29px;
     margin: 0;
     font-family: "Open Sans",Helvetica, Arial, sans-serif;
@@ -482,13 +468,6 @@ ul.client_items li, ul.project_list li {
   font-size: 17px !important;
 }
 
-#clients {
-  margin-bottom: 40px;
-}
-
-#support-downloads {
-  margin-bottom: 60px;
-}
 
 #support-downloads a {
   font-size: 19px !important;
@@ -500,9 +479,33 @@ ul.client_items li, ul.project_list li {
 #team-description {
 }
 #team-description .row {
-  margin-top: 100px !important; 
-  margin-bottom: 140px !important;
 }
 .openbtn {
-  z-index: 12;
+  z-index: 200;
+}
+#clients .nav-tabs {
+  background-color: transparent !important;
+}
+#clients .nav-tabs a {
+  color: #33a235 !important;  
+}
+#clients h5 {
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  line-height: 25px;
+}
+.collaborate {
+  font-family: "Open Sans",Helvetica, Arial, sans-serif;
+  line-height: 25px;
+  font-weight: 400;
+  color: #09B09C;  
+}
+
+section .heading {
+  padding-top: 70px;
+}
+#about-us .heading {
+  padding-top: 90px !important;
+}
+.navbar-default {
+  background-color: #151515 !important;
 }
