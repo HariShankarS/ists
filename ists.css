@@ -229,23 +229,7 @@ p, section ul {
   margin-left:6px;
   color: white;
 }
-.aboutus-box.pink .modal-content {
-  background: #DC005A;
-  border: 5px solid white;
-}
-.aboutus-box.purple .modal-content {
-  background: #7A4B94;
-  border: 5px solid white;
-}
-.aboutus-box.black .modal-content {
-  background: #2A3636;
-  border: 5px solid white;
-}
-.aboutus-box .modal-content p {
-  font-family: Josefin Sans,sans-serif;
-  line-height: 23px;
-  font-size: 17px;
-}
+
 #contact-us .heading {
   color: white;
 }
@@ -436,41 +420,13 @@ ul.client_items li, ul.project_list li {
 .serviceBox .service-icon .robot{
     background: #ff5722;
 }
-#robot .modal-content {
-    border: 5px solid #ff5722;
-}
-.serviceBox .service-icon .research{
-    background: #0fb2fc;
-}
-#research .modal-content {
-    border: 5px solid #0fb2fc;
-    border: 1px solid white;
-}
-.serviceBox .service-icon .training{
-    background: #00aa9a;
-}
-#training .modal-content {
-    border: 5px solid #00aa9a;
-}
-.serviceBox .service-icon .engineering, .btn-engineering {
-    background: #7A4B94 !important;
-    color: white !important;
-}
-#engineering .modal-content {
-    border: 5px solid #7A4B94;
-}
-.serviceBox .card-body button {
-  margin-top: 40px;
-}
-#products-services .modal-content p,#products-services .modal-content ul {
-  font-family: Josefin Sans,sans-serif !important;
-  line-height: 23px;
-  font-size: 17px !important;
-}
+
 
 
 #support-downloads a {
   font-size: 19px !important;
+  color: white;
+  font-weight: 500;
 }
 
 .work_pics {
@@ -507,5 +463,40 @@ section .heading {
   padding-top: 90px !important;
 }
 .navbar-default {
-  background-color: #151515 !important;
+  background-color: transparent !important;
+}
+#what-we-are .modal-content {
+  background: #DC005A;
+  border: 5px solid white;
+}
+#what-we-do .modal-content {
+  background: #7A4B94;
+  border: 5px solid white;
+}
+#success-stories .modal-content {
+  background: #2A3636;
+  border: 5px solid white;
+}
+#what-we-are  .modal-content p, #what-we-do .modal-content p, #success-stories .modal-content p {
+  font-family: Josefin Sans,sans-serif;
+  line-height: 23px;
+  font-size: 17px;
+  color: white;
+}
+#what-we-are  .modal-content h3, #what-we-do .modal-content h3, #success-stories .modal-content h3 {
+  color: white;
+  font-family: Sniglet;
+}
+.serviceBox .service-icon .research{
+    background: #0fb2fc;
+}
+.serviceBox .service-icon .training{
+    background: #00aa9a;
+}
+.serviceBox .service-icon .engineering, .btn-engineering {
+    background: #7A4B94 !important;
+    color: white !important;
+}
+.serviceBox .card-body button {
+  margin-top: 40px;
 }
