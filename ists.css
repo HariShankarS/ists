@@ -1,7 +1,6 @@
 section {
   padding-top: 50px;
 }
-
 h3  {
   color: black;
 }
@@ -420,7 +419,9 @@ ul.client_items li, ul.project_list li {
 .serviceBox .service-icon .robot{
     background: #ff5722;
 }
-
+#robot .modal-content {
+  border: 5px solid #ff5722;
+}
 
 
 #support-downloads a {
@@ -473,30 +474,52 @@ section .heading {
   background: #7A4B94;
   border: 5px solid white;
 }
-#success-stories .modal-content {
+#empowering .modal-content {
   background: #2A3636;
   border: 5px solid white;
 }
-#what-we-are  .modal-content p, #what-we-do .modal-content p, #success-stories .modal-content p {
+#what-we-are  .modal-content p, #what-we-do .modal-content p, #empowering .modal-content p {
   font-family: Josefin Sans,sans-serif;
   line-height: 23px;
   font-size: 17px;
   color: white;
 }
-#what-we-are  .modal-content h3, #what-we-do .modal-content h3, #success-stories .modal-content h3 {
+#what-we-are  .modal-content h3, #what-we-do .modal-content h3, #empowering .modal-content h3 {
   color: white;
   font-family: Sniglet;
 }
 .serviceBox .service-icon .research{
     background: #0fb2fc;
 }
+#research .modal-content {
+  border: 5px solid #0fb2fc;
+}
 .serviceBox .service-icon .training{
-    background: #00aa9a;
+  background: #00aa9a;
+}
+#training .modal-content {
+  border: 5px solid #00aa9a;
+}
+#training .modal-content ul {
+  font-family: 'Open Sans',sans-serif;
+  line-height: 30px;
 }
 .serviceBox .service-icon .engineering, .btn-engineering {
     background: #7A4B94 !important;
     color: white !important;
 }
+#engineering .modal-content {
+   border: 5px solid #7A4B94;
+}
 .serviceBox .card-body button {
   margin-top: 40px;
+}
+.navbar-heading {
+  text-transform: none !important;
+  font-family: 'Amaranth';
+  font-weight: bold !important;
+  font-size: 20px !important;
+}
+.navbar-img {
+  margin-top: -10px;
 }
