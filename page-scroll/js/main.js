@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	var hijacking= $('body').data('hijacking'),
 		animationType = $('body').data('animation'),
 		delta = 0,
-        scrollThreshold = 5,
+        scrollThreshold = 50,
         actual = 1,
         animating = false;
     
@@ -12,6 +12,8 @@ jQuery(document).ready(function($){
     	verticalNav = $('.cd-vertical-nav'),
     	prevArrow = verticalNav.find('a.cd-prev'),
     	nextArrow = verticalNav.find('a.cd-next');
+
+    var scrollTimer = null;
 
 	
 	//check the media query and bind corresponding events
@@ -272,7 +274,8 @@ jQuery(document).ready(function($){
 			opacity = 1,
 			boxShadowBlur = 0;
 		
-		if( sectionOffset >= -windowHeight && sectionOffset <= 0 ) {
+		if( sectionOffset >= -windowHeight && sectionOffset <= 50 ) {
+			sectionOffset = sectionOffset - 50;
 			// section entering the viewport
 			translateY = (-sectionOffset)*100/windowHeight;
 			
@@ -315,7 +318,8 @@ jQuery(document).ready(function($){
 					break;
 			}
 
-		} else if( sectionOffset > 0 && sectionOffset <= windowHeight ) {
+		} else if( sectionOffset > 50 && sectionOffset <= windowHeight ) {
+			sectionOffset = sectionOffset + 50;
 			//section leaving the viewport - still has the '.visible' class
 			translateY = (-sectionOffset)*100/windowHeight;
 			
@@ -324,7 +328,7 @@ jQuery(document).ready(function($){
 			        scale = (1 - ( sectionOffset * 0.3/windowHeight)).toFixed(5);
 					opacity = ( 1 - ( sectionOffset/windowHeight) ).toFixed(5);
 					translateY = 0;
-					boxShadowBlur = 40*(sectionOffset/windowHeight);
+					//boxShadowBlur = 40*(sectionOffset/windowHeight);
 
 					break;
 				case 'rotate':
@@ -535,7 +539,7 @@ $.Velocity
     .RegisterEffect("translateUp.delay", {
     	defaultDuration: 1,
         calls: [ 
-            [ { translateY: '0%'}, 0.8, { delay: 100 }],
+            [ { translateY: '0%'}, 0.8, { delay: 800 }],
         ]
     });
 //opacity
